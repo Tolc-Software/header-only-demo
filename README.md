@@ -1,4 +1,4 @@
-# Setting up a prototyping bench with `tolc` #
+# Header only demo with `tolc` #
 
 ## Usage ##
 
@@ -6,7 +6,7 @@
 
 You need the following installed locally:
 
-* `CMake` - Tested with `>3.14`.
+* `CMake` - Tested with `>3.15`.
 * `python` - The language to translate to.
 
 ### Building and importing ###

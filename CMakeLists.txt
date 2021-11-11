@@ -26,8 +26,8 @@ FetchContent_MakeAvailable(tolc_bootstrap)
 # Downloads and uses find_package to locate tolc
 get_tolc()
 
-# Creates a CMake target Math_python that can be
-# imported and used from python as 'import Math'
+# Creates a CMake target Greeter_python that can be
+# imported and used from python as 'import Greeter'
 tolc_create_translation(
   # Target to translate from
   # Uses PUBLIC include directories to find headers

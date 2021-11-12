@@ -7,11 +7,11 @@ target_include_directories(Greeter INTERFACE include)
 
 set_target_properties(Greeter
                       PROPERTIES
-                      CXX_STANDARD
+                      INTERFACE_CXX_STANDARD
                       17
-                      CXX_STANDARD_REQUIRED
+                      INTERFACE_CXX_STANDARD_REQUIRED
                       ON
-                      CXX_EXTENSIONS
+                      INTERFACE_CXX_EXTENSIONS
                       OFF)
 
 # Download the tolc bootstraper

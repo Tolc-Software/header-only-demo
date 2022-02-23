@@ -1,3 +1,3 @@
 import Greeter
 
-Greeter.greet(["Simon", "Mats"])
+Greeter.greet(["from C++", "to Python"])

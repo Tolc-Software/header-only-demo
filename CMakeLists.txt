@@ -11,15 +11,16 @@ set_target_properties(
              INTERFACE_CXX_STANDARD_REQUIRED ON
              INTERFACE_CXX_EXTENSIONS OFF)
 
+# Can be ["latest", "v1.2.0", ...]
+set(tolc_version latest)
 include(FetchContent)
 FetchContent_Declare(
   tolc_entry
-  URL https://github.com/Tolc-Software/tolc/releases/download/main-release/tolc-${CMAKE_HOST_SYSTEM_NAME}-main.tar.gz
+  URL https://github.com/Tolc-Software/tolc/releases/download/${tolc_version}/tolc-${CMAKE_HOST_SYSTEM_NAME}.tar.xz
 )
 FetchContent_Populate(tolc_entry)
 
-find_package(tolc CONFIG PATHS ${tolc_entry_SOURCE_DIR} REQUIRED
-             NO_DEFAULT_PATH)
+find_package(tolc CONFIG PATHS ${tolc_entry_SOURCE_DIR} REQUIRED)
 
 # Creates a CMake target Greeter_python that can be
 # imported and used from python as 'import Greeter'
